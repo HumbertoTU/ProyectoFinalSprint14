@@ -1,0 +1,1545 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='operator_stats.csv+ (Varias conexiones)' inline='true' name='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_df' name='textscan.0q8gy471wy4pwr11xqcsp0iits8m'>
+            <connection class='textscan' directory='C:/Users/starc/anaconda_projects/work_dir/Proyectos/ProyectoFinalSprint14/Telecomunicaciones' filename='data_df.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0q8gy471wy4pwr11xqcsp0iits8m' name='data_df.csv' table='[data_df#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='user_id' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='date' ordinal='2' />
+            <column datatype='string' name='direction' ordinal='3' />
+            <column datatype='boolean' name='internal' ordinal='4' />
+            <column datatype='string' name='operator_id' ordinal='5' />
+            <column datatype='boolean' name='is_missed_call' ordinal='6' />
+            <column datatype='integer' name='calls_count' ordinal='7' />
+            <column datatype='integer' name='call_duration' ordinal='8' />
+            <column datatype='integer' name='total_call_duration' ordinal='9' />
+            <column datatype='integer' name='waiting_duration' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_df.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[data_df.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[user_id]</local-name>
+            <parent-name>[data_df.csv]</parent-name>
+            <remote-alias>user_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[data_df.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>direction</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[direction]</local-name>
+            <parent-name>[data_df.csv]</parent-name>
+            <remote-alias>direction</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>internal</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[internal]</local-name>
+            <parent-name>[data_df.csv]</parent-name>
+            <remote-alias>internal</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>operator_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[operator_id]</local-name>
+            <parent-name>[data_df.csv]</parent-name>
+            <remote-alias>operator_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_missed_call</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_missed_call]</local-name>
+            <parent-name>[data_df.csv]</parent-name>
+            <remote-alias>is_missed_call</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calls_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calls_count]</local-name>
+            <parent-name>[data_df.csv]</parent-name>
+            <remote-alias>calls_count</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>call_duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[call_duration]</local-name>
+            <parent-name>[data_df.csv]</parent-name>
+            <remote-alias>call_duration</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_call_duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_call_duration]</local-name>
+            <parent-name>[data_df.csv]</parent-name>
+            <remote-alias>total_call_duration</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>waiting_duration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[waiting_duration]</local-name>
+            <parent-name>[data_df.csv]</parent-name>
+            <remote-alias>waiting_duration</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='None' datatype='integer' name='[Call Duration (agrupación)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[call_duration]' peg='0' size='220' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Calls Count (agrupación)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[calls_count]' peg='0' size='102' />
+      </column>
+      <column datatype='real' default-format='p0.00%' name='[Cálculo1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([calls_count]) / TOTAL(SUM([calls_count]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='data_df.csv' datatype='table' name='[__tableau_internal_object_id__].[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]' role='measure' type='quantitative' />
+      <column caption='Call Duration' datatype='integer' name='[call_duration]' role='measure' type='quantitative' />
+      <column caption='Calls Count' datatype='integer' name='[calls_count]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' datatype-customized='true' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+      <column caption='Internal' datatype='boolean' name='[internal]' role='dimension' type='nominal' />
+      <column caption='Is Missed Call' datatype='boolean' name='[is_missed_call]' role='dimension' type='nominal' />
+      <column caption='Operator Id' datatype='string' name='[operator_id]' role='dimension' type='nominal' />
+      <column caption='Total Call Duration' datatype='integer' name='[total_call_duration]' role='measure' type='quantitative' />
+      <column caption='User Id' datatype='integer' name='[user_id]' role='dimension' type='ordinal' />
+      <column caption='Waiting Duration' datatype='integer' name='[waiting_duration]' role='measure' type='quantitative' />
+      <column-instance column='[direction]' derivation='None' name='[none:direction:nk]' pivot='key' type='nominal' />
+      <column-instance column='[internal]' derivation='None' name='[none:internal:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/starc/AppData/Local/Temp/TableauTemp/#TableauTemp_0vqv0w41asij56163nn4a1pc2iik.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/19/2025 06:46:36 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>data_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>52901</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[user_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>data_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>524</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>data_df.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>146</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>direction</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[direction]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>direction</remote-alias>
+              <ordinal>3</ordinal>
+              <family>data_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>internal</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[internal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>internal</remote-alias>
+              <ordinal>4</ordinal>
+              <family>data_df.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>operator_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[operator_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>operator_id</remote-alias>
+              <ordinal>5</ordinal>
+              <family>data_df.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1692</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LES_RES' />
+              <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_missed_call</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[is_missed_call]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_missed_call</remote-alias>
+              <ordinal>6</ordinal>
+              <family>data_df.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>calls_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calls_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calls_count</remote-alias>
+              <ordinal>7</ordinal>
+              <family>data_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>219</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>call_duration</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[call_duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>call_duration</remote-alias>
+              <ordinal>8</ordinal>
+              <family>data_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4411</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_call_duration</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_call_duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_call_duration</remote-alias>
+              <ordinal>9</ordinal>
+              <family>data_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3653</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>waiting_duration</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[waiting_duration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>waiting_duration</remote-alias>
+              <ordinal>10</ordinal>
+              <family>data_df.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1795</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[data_df.csv_860DFFDDB85446A7A5C2588DD446BD72]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:direction:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;in&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;out&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:internal:nk]' type='palette'>
+            <map to='#59a14f'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos Mexicanos&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='data_df.csv' id='data_df.csv_860DFFDDB85446A7A5C2588DD446BD72'>
+            <properties context=''>
+              <relation connection='textscan.0q8gy471wy4pwr11xqcsp0iits8m' name='data_df.csv' table='[data_df#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='user_id' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy-MM-dd HH:mm:ssZZZZZ' name='date' ordinal='2' />
+                  <column datatype='string' name='direction' ordinal='3' />
+                  <column datatype='boolean' name='internal' ordinal='4' />
+                  <column datatype='string' name='operator_id' ordinal='5' />
+                  <column datatype='boolean' name='is_missed_call' ordinal='6' />
+                  <column datatype='integer' name='calls_count' ordinal='7' />
+                  <column datatype='integer' name='call_duration' ordinal='8' />
+                  <column datatype='integer' name='total_call_duration' ordinal='9' />
+                  <column datatype='integer' name='waiting_duration' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x'>
+      <datasources>
+        <datasource caption='operator_stats.csv+ (Varias conexiones)' name='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x'>
+        <column caption='Date' datatype='date' datatype-customized='true' name='[date]' role='dimension' type='ordinal' />
+        <column caption='Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+        <column caption='Internal' datatype='boolean' name='[internal]' role='dimension' type='nominal' />
+        <column-instance column='[date]' derivation='None' name='[none:date:nk]' pivot='key' type='ordinal' />
+        <column-instance column='[direction]' derivation='None' name='[none:direction:nk]' pivot='key' type='nominal' />
+        <column-instance column='[internal]' derivation='None' name='[none:internal:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:date:nk]'>
+        <groupfilter function='level-members' level='[none:date:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]'>
+        <groupfilter function='level-members' level='[none:direction:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:internal:nk]' member='false' />
+          <groupfilter function='member' level='[none:internal:nk]' member='true' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Gráfico circular llamadas internas'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='operator_stats.csv+ (Varias conexiones)' name='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x'>
+            <column caption='Calls Count' datatype='integer' name='[calls_count]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' datatype-customized='true' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+            <column caption='Internal' datatype='boolean' name='[internal]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:nk]' pivot='key' type='ordinal' />
+            <column-instance column='[direction]' derivation='None' name='[none:direction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[internal]' derivation='None' name='[none:internal:nk]' pivot='key' type='nominal' />
+            <column-instance column='[calls_count]' derivation='Sum' name='[pcto:sum:calls_count:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[calls_count]' derivation='Sum' name='[sum:calls_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]</column>
+            <column>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]</column>
+            <column>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:date:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[sum:calls_count:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='size-bar' field='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[pcto:sum:calls_count:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]' />
+              <wedge-size column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[sum:calls_count:qk]' />
+              <text column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]' />
+              <text column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[pcto:sum:calls_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{210143E0-35B4-41BB-88FB-0EDCA7680474}' />
+    </worksheet>
+    <worksheet name='Histograma de duración de llamadas'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='operator_stats.csv+ (Varias conexiones)' name='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x'>
+            <column caption='Call Duration' datatype='integer' name='[call_duration]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' datatype-customized='true' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+            <column caption='Internal' datatype='boolean' name='[internal]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:nk]' pivot='key' type='ordinal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[direction]' derivation='None' name='[none:direction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[internal]' derivation='None' name='[none:internal:nk]' pivot='key' type='nominal' />
+            <column-instance column='[call_duration]' derivation='Sum' name='[sum:call_duration:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]</column>
+            <column>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]</column>
+            <column>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:date:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]' />
+              <text column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[sum:call_duration:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[sum:call_duration:qk]</rows>
+        <cols>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:date:qk]</cols>
+      </table>
+      <simple-id uuid='{6D73E591-715D-47BC-B304-AB8961C3CF63}' />
+    </worksheet>
+    <worksheet name='Histograma de número de llamadas por día'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='operator_stats.csv+ (Varias conexiones)' name='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x'>
+            <column caption='Calls Count' datatype='integer' name='[calls_count]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' datatype-customized='true' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+            <column caption='Internal' datatype='boolean' name='[internal]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:nk]' pivot='key' type='ordinal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[direction]' derivation='None' name='[none:direction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[internal]' derivation='None' name='[none:internal:nk]' pivot='key' type='nominal' />
+            <column-instance column='[calls_count]' derivation='Sum' name='[sum:calls_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]</column>
+            <column>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]</column>
+            <column>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:date:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]' />
+              <text column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[sum:calls_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[sum:calls_count:qk]</rows>
+        <cols>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:date:qk]</cols>
+      </table>
+      <simple-id uuid='{35281911-A8E5-49CF-9E26-D8A5996BCB34}' />
+    </worksheet>
+    <worksheet name='Llamadas internas vs Externas filtro diferente'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='operator_stats.csv+ (Varias conexiones)' name='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x'>
+            <column caption='Calls Count' datatype='integer' name='[calls_count]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' datatype-customized='true' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+            <column caption='Internal' datatype='boolean' name='[internal]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='None' name='[none:date:nk]' pivot='key' type='ordinal' />
+            <column-instance column='[direction]' derivation='None' name='[none:direction:nk]' pivot='key' type='nominal' />
+            <column-instance column='[internal]' derivation='None' name='[none:internal:nk]' pivot='key' type='nominal' />
+            <column-instance column='[calls_count]' derivation='Sum' name='[pcto:sum:calls_count:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[calls_count]' derivation='Sum' name='[sum:calls_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]</column>
+            <column>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]</column>
+            <column>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:date:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]' />
+              <size column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[sum:calls_count:qk]' />
+              <text column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]' />
+              <text column='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[pcto:sum:calls_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D5755998-DBD3-4D6A-831B-46050E7EEF40}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='operator_stats.csv+ (Varias conexiones)' name='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1fjeddq0y7ct4f1ctcu3f00e3r8x'>
+        <column caption='Date' datatype='date' datatype-customized='true' name='[date]' role='dimension' type='ordinal' />
+        <column caption='Direction' datatype='string' name='[direction]' role='dimension' type='nominal' />
+        <column caption='Internal' datatype='boolean' name='[internal]' role='dimension' type='nominal' />
+        <column-instance column='[date]' derivation='None' name='[none:date:nk]' pivot='key' type='ordinal' />
+        <column-instance column='[direction]' derivation='None' name='[none:direction:nk]' pivot='key' type='nominal' />
+        <column-instance column='[internal]' derivation='None' name='[none:internal:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98624' id='15' param='horz' type-v2='layout-flow' w='99310' x='345' y='688'>
+            <zone h='98624' id='7' param='horz' type-v2='layout-flow' w='92413' x='345' y='688'>
+              <zone h='98624' id='5' type-v2='layout-basic' w='92413' x='345' y='688'>
+                <zone h='59209' id='3' name='Histograma de duración de llamadas' w='46207' x='46551' y='40103'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='83048' id='10' name='Histograma de número de llamadas por día' show-caption='true' w='46206' x='345' y='16264'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='39415' id='11' name='Gráfico circular llamadas internas' w='46207' x='46551' y='688'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='15576' id='13' type-v2='text' w='46206' x='345' y='688'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'>Descripción del Dashboard</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'>Este dashboard interactivo presenta una </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'>visión general del comportamiento de las llamadas</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'> realizadas a lo largo del periodo analizado. Su objetivo principal es proporcionar una herramienta visual clara para explorar patrones clave en la duración, dirección y frecuencia de las llamadas.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98624' id='14' is-fixed='true' param='vert' type-v2='layout-flow' w='6897' x='92758' y='688'>
+              <zone h='5679' id='16' name='Histograma de número de llamadas por día' pane-specification-id='0' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]' type-v2='color' w='6897' x='92758' y='688'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='5679' id='17' name='Gráfico circular llamadas internas' pane-specification-id='0' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]' type-v2='color' w='6897' x='92758' y='6367'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7659' id='18' name='Histograma de número de llamadas por día' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]' type-v2='filter' values='database' w='6897' x='92758' y='12046'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='7659' id='19' name='Histograma de número de llamadas por día' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]' type-v2='filter' values='database' w='6897' x='92758' y='19705'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4475' id='20' mode='checkdropdown' name='Histograma de número de llamadas por día' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:date:nk]' type-v2='filter' values='database' w='6897' x='92758' y='27364'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='24' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98624' id='23' param='vert' type-v2='layout-flow' w='99310' x='345' y='688'>
+                <zone forceUpdate='true' h='15576' id='13' type-v2='text' w='46206' x='345' y='688'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'>Descripción del Dashboard</run>
+                    <run>Æ&#10;</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'>Este dashboard interactivo presenta una </run>
+                    <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'>visión general del comportamiento de las llamadas</run>
+                    <run fontcolor='#000000' fontname='Benton Sans Book' fontsize='14'> realizadas a lo largo del periodo analizado. Su objetivo principal es proporcionar una herramienta visual clara para explorar patrones clave en la duración, dirección y frecuencia de las llamadas.</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39415' id='11' is-fixed='true' name='Gráfico circular llamadas internas' w='46207' x='46551' y='688'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5679' id='17' name='Gráfico circular llamadas internas' pane-specification-id='0' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]' type-v2='color' w='6897' x='92758' y='6367'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7659' id='18' mode='checkdropdown' name='Histograma de número de llamadas por día' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]' type-v2='filter' values='database' w='6897' x='92758' y='12046'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7659' id='19' mode='checkdropdown' name='Histograma de número de llamadas por día' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]' type-v2='filter' values='database' w='6897' x='92758' y='19705'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4475' id='20' mode='checkdropdown' name='Histograma de número de llamadas por día' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:date:nk]' type-v2='filter' values='database' w='6897' x='92758' y='27364'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='83048' id='10' is-fixed='true' name='Histograma de número de llamadas por día' show-caption='true' w='46206' x='345' y='16264'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5679' id='16' name='Histograma de número de llamadas por día' pane-specification-id='0' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]' type-v2='color' w='6897' x='92758' y='688'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='59209' id='3' is-fixed='true' name='Histograma de duración de llamadas' w='46207' x='46551' y='40103'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AF921B09-AD2D-4C8A-AADE-3A832D766710}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Histograma de duración de llamadas'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card mode='checkdropdown' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:date:nk]' type='filter' />
+            <card param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:date:nk]</field>
+            <field>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]</field>
+            <field>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5D61FA97-8A31-46EC-9674-B54F8200FD23}' />
+    </window>
+    <window class='worksheet' name='Gráfico circular llamadas internas'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]</field>
+            <field>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F8A789E5-2A4F-4666-AD24-ADF731F2272A}' />
+    </window>
+    <window class='worksheet' name='Histograma de número de llamadas por día'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:date:nk]</field>
+            <field>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{45A55BC1-F5F9-46E9-A206-679A7213FE55}' />
+    </window>
+    <window class='worksheet' name='Llamadas internas vs Externas filtro diferente'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[sum:calls_count:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:direction:nk]</field>
+            <field>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{360E902B-8D49-41F7-8793-02CAFC4F6AA0}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Gráfico circular llamadas internas'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1fjeddq0y7ct4f1ctcu3f00e3r8x].[none:internal:nk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Histograma de duración de llamadas'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Histograma de número de llamadas por día'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='14' />
+      <device-preview visible='true' />
+      <simple-id uuid='{39DDFB3A-8B83-4F65-BBC3-82BD927B6881}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='164' name='Gráfico circular llamadas internas' width='164'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Histograma de duración de llamadas' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Histograma de número de llamadas por día' width='192'>
+      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
+      suugd9qosnoAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='164' name='Llamadas internas vs Externas filtro diferente' width='164'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
