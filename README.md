@@ -58,6 +58,28 @@ Se crearon visualizaciones en Tableau para facilitar la interpretación de los d
   - Waiting Duration
   - Total de operadores
 
+  ## 🎛️ Filtros Interactivos en el Dashboard
+
+El dashboard cuenta con varios filtros para facilitar la exploración y el análisis detallado de los datos:
+
+- **Is inefficient:** Permite seleccionar entre operadores *efficient* (eficientes) e *inefficient* (ineficientes).  
+- **Date:** Rango de fechas para filtrar los datos, desde el **8 de agosto de 2019** hasta el **27 de noviembre de 2019**.  
+- **Internal:** Filtra entre llamadas *internas* y *externas*.  
+- **Direction:** Filtra por la dirección de la llamada: *in* (entrantes) o *out* (salientes).  
+
+### 🎨 Convenciones de color
+
+Para facilitar la interpretación visual, se utilizaron los siguientes colores en las gráficas y paneles:
+
+- **Is inefficient:**  
+  - *efficient* → color **azul**  
+  - *inefficient* → color **naranja**  
+
+- **Internal:**  
+  - *llamadas internas* → color **azul**  
+  - *llamadas externas* → color **naranja**
+
+
 ## ⚙️ Cómo usar este repositorio
 
 1. Clona el repositorio:
