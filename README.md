@@ -18,14 +18,17 @@ Este proyecto tiene como objetivo analizar el desempeño de operadores en un cen
 - Jupyter Notebook
 - Git/GitHub
 
-## 📂 Archivos incluidos
+## 📦 Entregables del Proyecto
 
-- `merged_df.csv`: Dataset combinado listo para visualización.
-- `call_analysis.ipynb`: Notebook con todo el análisis paso a paso.
-- `telecom_clients_us.csv`: Información de los clientes.
-- `telecom_dataset_us.csv`: Dataset crudo de llamadas desde la empresa de telecomunicaciones.
-- `README.md`: Este archivo de descripción del proyecto.
-- `Dashboards telecomunicaciones`: Dashboard interactivo con un df creado a partir del análisis realizado
+Este proyecto incluye los siguientes materiales:
+
+- 📓 **Notebook Jupyter (`call_analysis.ipynb`)**: Contiene el análisis completo de los datos con Python.
+- 📊 **Dashboard en Tableau**: Visualizaciones interactivas para explorar tendencias y métricas clave.  
+- 📽️ **Presentación en PowerPoint (`Conclusión Telecomunicaciones.pdf`)**: Expone los hallazgos, metodología y recomendaciones del análisis.
+
+Puedes acceder a todos estos archivos en el repositorio de GitHub:  
+🔗 [Repositorio GitHub - ProyectoFinalSprint14](https://github.com/HumbertoTU/ProyectoFinalSprint14)
+
 
 ## 📈 Dashboard en Tableau
 
@@ -58,7 +61,7 @@ Se crearon visualizaciones en Tableau para facilitar la interpretación de los d
   - Waiting Duration
   - Total de operadores
 
-  ## 🎛️ Filtros Interactivos en el Dashboard
+## 🎛️ Filtros Interactivos en el Dashboard
 
 El dashboard cuenta con varios filtros para facilitar la exploración y el análisis detallado de los datos:
 
@@ -78,10 +81,3 @@ Para facilitar la interpretación visual, se utilizaron los siguientes colores e
 - **Internal:**  
   - *llamadas internas* → color **azul**  
   - *llamadas externas* → color **naranja**
-
-
-## ⚙️ Cómo usar este repositorio
-
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/HumbertoTU/ProyectoFinalSprint14.git
